@@ -7,7 +7,6 @@ import { useRouter } from 'next/router'
 
 import * as React from "react"
 
-import { Input } from "@/components/ui/input"
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
 import { ArrowLeftRight } from "lucide-react"
 
@@ -226,13 +225,10 @@ function HomeSearch () {
     </Popover>
     
     </>
-            {/* <Input type="date" placeholder="Departure" className="w-44 h-16 mx-14" />
-            <Input type="date" placeholder="Return" className="w-44 h-16 mx-6" /> */}
+          
             
           </div>
-          {/* <Button className="w-full mt-4 bg-teal-700 hover:bg-teal-800">
-            Search flights
-          </Button> */}
+        
           <div className="flex justify-end m-2">
            <Button  onClick={() => router.push('/flightResults')} className="w-60 h-12 rounded-lg font-medium text-md mt-4 bg-[#003e39] hover:bg-teal-800">
             <img src="search.png" alt="Search" className="m-2"/>
